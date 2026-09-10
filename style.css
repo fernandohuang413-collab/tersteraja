@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* Background gradient seperti suasana senja */
+    background: linear-gradient(180deg, #121212 0%, #2a2118 40%, #523b28 100%);
+    color: #ffffff;
+    min-height: 100vh;
+    padding-bottom: 70px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: rgba(18, 18, 18, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff9d3b;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.logo b {
+    color: #ffffff;
+}
+
+/* Tombol / Buttons */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-filled, .btn-filled-sm {
+    background-color: #cbb49d;
+    color: #121212;
+}
+
+.btn-outline, .btn-outline-sm {
+    background-color: transparent;
+    border: 1px solid #cbb49d;
+    color: #ffffff;
+}
+
+.btn-filled-sm, .btn-outline-sm {
+    padding: 8px 18px;
+    font-size: 0.85rem;
+}
+
+.btn-filled, .btn-outline {
+    padding: 14px 0;
+    width: 48%;
+    font-size: 1rem;
+}
+
+/* Hero Section */
+.hero {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.hero-desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #d1d1d1;
+    margin-bottom: 30px;
+}
+
+.cta-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+/* Banner Box */
+.banner-box {
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Fixed Bottom Bar (Sesuai gambar di HP) */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #121212;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    z-index: 100;
+}
+
+.bottom-nav .btn {
+    flex: 1;
+}
